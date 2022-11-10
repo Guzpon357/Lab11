@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab11.Views.ViewOperations">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry  Text="{Binding ValorA}"></Entry>
+            <Entry Text="{Binding ValorB}" ></Entry>
+            <Button Text="Sumar" Command="{Binding Sumar}" ></Button>
+            <Button Text="Restar" Command="{Binding Restar}" ></Button>
+            <Button Text="Multiplicar" Command="{Binding Multiplicar}" ></Button>
+            <Button Text="Dividir" Command="{Binding Dividir}" ></Button>
+            <Label Text="{Binding Resultado}" TextColor="Orange"
+                   HorizontalOptions="Center"
+                   FontSize="28"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
